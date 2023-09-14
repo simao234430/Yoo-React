@@ -3,7 +3,7 @@ package com.yoo.common.enums;
 /**
  * 操作状态
  * 
- * @author simao
+ * @author ruoyi
  *
  */
 public enum BusinessStatus

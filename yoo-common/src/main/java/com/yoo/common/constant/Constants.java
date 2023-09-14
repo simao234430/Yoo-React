@@ -1,5 +1,12 @@
 package com.yoo.common.constant;
+
 import io.jsonwebtoken.Claims;
+
+/**
+ * 通用常量信息
+ * 
+ * @author ruoyi
+ */
 public class Constants
 {
     /**
@@ -11,6 +18,11 @@ public class Constants
      * GBK 字符集
      */
     public static final String GBK = "GBK";
+
+    /**
+     * www主域
+     */
+    public static final String WWW = "www.";
 
     /**
      * http请求
@@ -51,7 +63,7 @@ public class Constants
      * 登录失败
      */
     public static final String LOGIN_FAIL = "Error";
-
+ 
     /**
      * 验证码有效期（分钟）
      */
@@ -126,5 +138,5 @@ public class Constants
      * 定时任务违规的字符
      */
     public static final String[] JOB_ERROR_STR = { "java.net.URL", "javax.naming.InitialContext", "org.yaml.snakeyaml",
-            "org.springframework", "org.apache", "com.yoo.common.utils.file" };
+            "org.springframework", "org.apache", "com.ruoyi.common.utils.file", "com.ruoyi.common.config" };
 }

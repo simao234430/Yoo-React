@@ -8,7 +8,7 @@ import java.util.Map;
 /**
  * 请求方式
  *
- * @author simao
+ * @author ruoyi
  */
 public enum HttpMethod
 {

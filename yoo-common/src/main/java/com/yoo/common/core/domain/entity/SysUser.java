@@ -9,14 +9,16 @@ import com.yoo.common.xss.Xss;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
-import javax.validation.constraints.*;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 import java.util.Date;
 import java.util.List;
 
 /**
  * 用户对象 sys_user
  * 
- * @author yoo
+ * @author ruoyi
  */
 public class SysUser extends BaseEntity
 {

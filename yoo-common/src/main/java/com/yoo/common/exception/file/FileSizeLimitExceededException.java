@@ -5,7 +5,7 @@ package com.yoo.common.exception.file;
  * 
  * @author ruoyi
  */
-public class FileSizeLimitExceededException extends FileException
+public class FileSizeLimitExceededException extends com.yoo.common.exception.file.FileException
 {
     private static final long serialVersionUID = 1L;
 

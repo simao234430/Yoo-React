@@ -13,7 +13,7 @@ import java.util.Set;
 /**
  * 类型转换器
  *
- * @author simao
+ * @author ruoyi
  */
 public class Convert
 {
@@ -714,7 +714,7 @@ public class Convert
         }
         if (value instanceof Double)
         {
-            return new BigDecimal((Double) value);
+            return BigDecimal.valueOf((Double) value);
         }
         if (value instanceof Integer)
         {
@@ -757,7 +757,7 @@ public class Convert
      */
     public static String utf8Str(Object obj)
     {
-        return str(obj, CharsetKit.CHARSET_UTF_8);
+        return str(obj, com.yoo.common.core.text.CharsetKit.CHARSET_UTF_8);
     }
 
     /**
@@ -895,7 +895,7 @@ public class Convert
      */
     public static String toSBC(String input, Set<Character> notConvertSet)
     {
-        char c[] = input.toCharArray();
+        char[] c = input.toCharArray();
         for (int i = 0; i < c.length; i++)
         {
             if (null != notConvertSet && notConvertSet.contains(c[i]))
@@ -937,7 +937,7 @@ public class Convert
      */
     public static String toDBC(String text, Set<Character> notConvertSet)
     {
-        char c[] = text.toCharArray();
+        char[] c = text.toCharArray();
         for (int i = 0; i < c.length; i++)
         {
             if (null != notConvertSet && notConvertSet.contains(c[i]))
