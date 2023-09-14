@@ -1,0 +1,6 @@
+# Project exclude paths
+/yoo-admin/target/
+/yoo-common/target/
+/yoo-framework/target/
+/yoo-quartz/target/
+/yoo-system/target/
