@@ -10,10 +10,30 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>yoo-quartz</artifactId>
+    <description>
+        quartz定时任务
+    </description>
 
-    <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-    </properties>
+    <dependencies>
+
+        <!-- 定时任务 -->
+        <dependency>
+            <groupId>org.quartz-scheduler</groupId>
+            <artifactId>quartz</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.mchange</groupId>
+                    <artifactId>c3p0</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!-- 通用工具-->
+        <dependency>
+            <groupId>com.yoo</groupId>
+            <artifactId>yoo-common</artifactId>
+        </dependency>
+
+    </dependencies>
 
 </project>

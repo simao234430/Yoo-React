@@ -32,7 +32,13 @@ server:
       max: 800
       # Tomcat启动初始化的线程数，默认值10
       min-spare: 100
-
+# 用户配置
+user:
+  password:
+    # 密码最大错误次数
+    maxRetryCount: 5
+    # 密码锁定时间（默认10分钟）
+    lockTime: 10
 # 日志配置
 logging:
   level:
